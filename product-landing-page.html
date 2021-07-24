@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        #main {
+            background-color: white;
+            max-width: 90%;
+            margin: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 10px;
+        }
+        .nav-head {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 85%;
+            background-color: #fff;
+        }
+        .nav-image {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #header-img {
+            float: left;
+            max-width: 20%;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        .nav-link {
+            display: flex;
+            flex-direction: row;
+            align-items: right;
+            margin: 0 15px;
+        }
+        #nav-bar {
+            display: flex;
+            flex-direction: row;
+            float: right;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            position: relative;
+            top: 0px;
+            right: 0px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 90%;
+            margin: auto;
+        }
+        .fixed-width {
+            width: 30%;
+            border: 1px solid #000;
+            background-color: rgb(121, 121, 230);
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .body-content {
+            margin-top: 80px;
+        }
+        #form {
+            max-width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        #email {
+            width: 50%;
+            height: 40px;
+            margin: 10px auto;
+            align-items: center;
+        }
+        #password {
+            width: 50%;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        #submit {
+            width: 30%;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        #features {
+            font-size: 14px;
+            padding: 0 10%;
+            margin-bottom: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(136, 23, 23);
+        }
+        .div-head {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #video {
+            width: 70%;
+            margin: auto;
+        }
+        @media (max-width: 1200px) {
+            ul {
+                font-size: 75%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: rgb(136, 23, 23);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <h1 id="header">
+            <div class="nav-head">
+                <div class="nav-image">
+                    <img id="header-img" src="logo.jpg" alt="Crego Fashion House" />
+                    Crego Fashion House </div>
+                <nav id="nav-bar">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#video" class="nav-link">Video</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </nav>
+            </div>
+            <div class="body-content">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <p>Meet us @ Crego Fashion House</p>
+                    <input type="email" id="email" placeholder="Enter your Email here" name="email" required /><br>
+                    <input type="password" id="password" placeholder="Password" required /><br>
+                    <input type="submit" id="submit" placeholder="Submit"/>
+                </form>
+            </div>
+        </h1>
+        <ul id="features">
+            <p><b>Material</b></p>
+            <li>We use quality materials to make our dresses and this has increased the standards of our products</li>
+            <p><b>Delivery</b></p>
+            <li>We deliver our products without delay as we work in collaboration with fast shipping companies to ensure
+                that the producte get to their destination as soon work is done on them</li>
+            <p><b>Quality Assurance</b></p>
+            <li>Before every product is sent for delivery we make sure there are no damages or faults on them</li>
+        </ul>
+        <div class="container">
+            <video id="video" controls>
+                <source src="Amica-Bridal-Boutique-2016.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="pricing" class="container">
+            <div class="fixed-width">
+                <p>Traditional Attire<br>
+                    Min. #100,000</p>
+            </div>
+            <div class="fixed-width">
+                <p>wedding gown<br>
+                    Min. #150,000</p>
+            </div>
+            <div class="fixed-width">
+                <p>English wears<br>
+                    Min. #15,000</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

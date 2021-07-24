@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        #main {
+            background-color: rgb(144, 126, 160);
+        }
+
+        #title {
+            font-size: 40px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: rgb(48, 2, 68);
+        }
+
+        #description {
+            font-size: 20px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #name-label {
+            font-size: 20px;
+            text-align: center; 
+        }
+
+        #Email-label {
+            font-size: 20px;
+            text-align: center;  
+        }
+
+        #number-label {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #survey-form {
+            width: 50%;
+            margin: auto;
+            background-color: rgb(4, 4, 70);
+            padding: 5%;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        #Email {
+            width: 90%;
+            display: block;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #name {
+            width: 90%;
+            display: block;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #age {
+            width: 90%;
+            display: block;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #dropdown {
+            width: 90%;
+            display: block;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        #comment {
+            width: 90%;
+            display: block;
+            height: 80px;
+        }
+
+        #submit {
+            width: 90%;
+            display: block;
+            height: 40px;
+            background-color: mediumspringgreen;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .checkbox {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main id="main">
+        <h1 id="title">Sunday School Survey Form</h1>
+        <p id="description">This is to have you access our service and help us serve you better</p>
+        <form id="survey-form">
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name here" required/>
+            </div>
+            <div>
+                <label id="Email-label" for="Email">Email</label>
+                <input id="Email" type="Email" placeholder="Enter your Email here" required/>
+
+            </div>
+            <div>
+                <label id="number-label" for="age">Age</label>
+                <input id="age" type="number" placeholder="Age" min="20" max="90" required/>
+            </div>
+                <p id="category">Where do you belong?</p>
+                <select id="dropdown">
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Minister">Minister</option>
+                </select>
+            </div>
+            <div>
+                <p id="ability">How can you access your teacher's ability?
+                </p>
+                <input type="radio" name="ability" value="good"/>Good
+                <input type="radio" name="ability" value="fair"/>Fair
+                <input type="radio" name="ability" value="not bad"/>Not bad
+                <input type="radio" name="ability" value="bad"/>Bad
+                <p>Do you think rotating teachers for classes is a good idea?</p>
+                <input type="radio" name="idea" value="yes"/>Yes
+                <input type="radio" name="idea" value="no"/>No
+                <input type="radio" name="idea" value="don't know"/>Don't know
+                <input type="radio" name="idea" value="may be"/>May be
+                <p>What is your opinion about having student taking the outlines?</p>
+                <input type="radio" name="opinion" value="good"/>Good
+                <input type="radio" name="opinion" value="bad"/>Bad
+                <input type="radio" name="opinion" value="takes time"/>Takes time
+            </div>
+            <div>
+                <p>How do you think sunday school department can serve you better? (tick all box that apply)</p>
+                <input class="checkbox" type="checkbox" name="service" value="extending sunday school time"/>Extending sunday school
+                time</br>
+                <input class="checkbox" type="checkbox" name="service" value="making more time for questions and contributions"/>Making
+                more time available for questions and contributions</br>
+                <input class="checkbox" type="checkbox" name="service" value="making the sunday school a general class"/>Making the sunday
+                school a general class</br>
+                <input class="checkbox" type="checkbox" name="service" value="creating classes for different languages"/>creating classes
+                for different languages</br>
+                <input class="checkbox" type="checkbox" name="service" value="organizing quiz competition once a month"/>Organizing quiz
+                competition once a month</br>
+                <input class="checkbox" type="checkbox" name="service" value="regular assessment of students' participation"/>Regular
+                assessment of students' participation</br>
+            </div>
+            <div>
+                <p>You can give additional opinion here</p>
+                <textarea id="comment" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div>
+                <input id="submit" type="submit" name="submit" value="submit"/>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
